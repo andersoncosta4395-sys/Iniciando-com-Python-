@@ -1,6 +1,7 @@
 #crie um bate-papo
 print("Olá, tudo bem com você?")
-name=José 
-idade=15
-print("Tudo bem.")
-print(f"{nome} quantos anos você tem?")
+print("Digite Seu Nome: ")
+name = input()
+print(f"Prazer {nome}, quantos anos você tem? ")
+age = input()
+print(f"Muito bom saber que você tem {age}")
