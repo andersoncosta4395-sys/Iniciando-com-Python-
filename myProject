@@ -1,6 +1,12 @@
 #crie um bate-papo
-print("Olá, tudo bem com você?")
-name=José 
-idade=15
-print("Tudo bem.")
-print(f"{nome} quantos anos você tem?")
+#print("Olá, tudo bem com você?")
+#name=José 
+#idade=15
+#print("Tudo bem.")
+#print(f"{nome} quantos anos você tem?")
+
+resposta = input()
+computador = input(resposta) + função 
+print("Olá, tudo bem? Como você se chama?")
+
+print(f"{resposta}")
