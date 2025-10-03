@@ -9,4 +9,8 @@ idade_2=20
 print(f"Uau, eu tenho {idade_2}")
 compararIdade=idade_2 - idade
 print(f"Eu sou {compararIdade} mais velho do que você")
+#pergunte o que o usuário deseja 
+print(f"Em que posso te ajudar {nome}?")
+duvida = input()
+print(f"Eu tenho uma {duvida}")
 
