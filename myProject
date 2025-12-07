@@ -10,3 +10,24 @@ print(f"Uau, eu tenho {idade_2}")
 compararIdade=idade_2 - idade
 print(f"Eu sou {compararIdade} mais velho do que você")
 
+
+pip install chatterbot chatterbot_corpus
+
+from chatterbot import ChatBot
+from chatterbot.trainers import ChatterBotCorpusTrainer
+
+# Cria o chatbot
+chatbot = ChatBot("MeuChatBot")
+
+# Treinador usando corpus em português
+treinador = ChatterBotCorpusTrainer(chatbot)
+treinador.train("chatterbot.corpus.portuguese")  # Você pode treinar em outras línguas também
+
+# Loop para conversar com o bot
+print("Digite 'sair' para encerrar.")
+while True:
+    pergunta = input("Você: ")
+    if pergunta.lower() == 'sair':
+        break
+    resposta = chatbot.get_response(pergunta)
+    print("Bot:", resposta)
